@@ -30,7 +30,6 @@
     Requirements:
         1. Must be using a recent version of ObinsKit that uses the new
            `kbd_macro_new` table/schema.
-        2.
 """
 
 import argparse
@@ -250,7 +249,8 @@ f'''# INSTRUCTIONS FOR EDITING THIS OBINSKIT MACRO
 if __name__ == '__main__':
     logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', level=logging.DEBUG)
     logger = logging.getLogger(os.path.splitext(__file__)[0])
-    argparser = argparse.ArgumentParser()
+    argparser = argparse.ArgumentParser(description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter)
     argparser.add_argument("--db-path",
             # only required for some use cases
             action='store',
