@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "obinskit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Tool for working with ObinsKit SQLITE databases programatically and manually."
 authors = ["Tim Black <timblaktu@gmail.com>"]
 license = "MIT"
