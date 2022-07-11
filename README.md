@@ -2,6 +2,7 @@
 Utilities to work with ObinsKit (AnnePro) Keyboards
 
 ## Usage
+```
 $ ./edit-macro.py -h
 usage: edit-macro.py [-h] [--db-path DB_PATH] [--macro-name MACRO_NAME] [--dry-run] [--verbose] [--list-keycodes]
 
@@ -42,3 +43,4 @@ options:
   --dry-run             When True, don't write changes to sqlite database.
   --verbose             Log all the things
   --list-keycodes       Print mappings between key values and names used by ObinsKit.Does not require other args.
+  ```
